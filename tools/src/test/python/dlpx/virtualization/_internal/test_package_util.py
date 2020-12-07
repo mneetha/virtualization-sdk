@@ -14,7 +14,7 @@ class TestPackageUtil:
 
     @staticmethod
     def test_get_virtualization_api_version():
-        assert package_util.get_virtualization_api_version() == '1.4.0'
+        assert package_util.get_virtualization_api_version() == '1.4.1'
 
     @staticmethod
     def test_get_engine_api_version():
@@ -26,7 +26,7 @@ class TestPackageUtil:
             'type': 'APIVersion',
             'major': 1,
             'minor': 4,
-            'micro': 0
+            'micro': 1
         }
         assert package_util.get_build_api_version() == build_api_version
 
